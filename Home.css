@@ -12,18 +12,17 @@
 .u-section-1 .u-image-1 {
   width: 422px;
   height: 422px;
-  background-image: url("images/IMG_3331.jpg");
-  background-position: 50% 50%;
+  object-position: 50% 2.71%;
   margin: -343px auto 0;
 }
 
 .u-section-1 .u-text-1 {
+  width: 554px;
   text-transform: uppercase;
+  font-weight: 300;
   letter-spacing: 4px;
   font-size: 3rem;
-  width: 554px;
-  font-weight: 300;
-  font-family: "Courier New", monospace;
+  font-family: Roboto, sans-serif;
   margin: 60px auto 0;
 }
 
@@ -42,6 +41,12 @@
   padding: 0;
 }
 
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    inset: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .u-section-1 .u-text-1 {
     width: 540px;
@@ -55,10 +60,6 @@
 @media (max-width: 575px) {
    .u-section-1 {
     min-height: 779px;
-  }
-
-  .u-section-1 .u-shape-1 {
-    height: 298px;
   }
 
   .u-section-1 .u-image-1 {
@@ -83,8 +84,8 @@
 }
 
 .u-section-2 .u-layout-wrap-1 {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 62px;
+  margin-bottom: 58px;
 }
 
 .u-section-2 .u-layout-cell-1 {
@@ -176,8 +177,8 @@
   }
 
   .u-section-2 .u-layout-wrap-1 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 62px;
+    margin-bottom: 58px;
   }
 
   .u-section-2 .u-text-1 {
@@ -511,13 +512,13 @@
 
 .u-section-5 .u-text-3 {
   line-height: 2;
-  margin: 190px 0 0 100px;
+  margin: 195px 0 0 100px;
 }
 
 .u-section-5 .u-icon-1 {
   width: 64px;
   height: 64px;
-  margin: 30px 178px 0 auto;
+  margin: 25px 178px 0 auto;
 }
 
 .u-section-5 .u-icon-2 {
