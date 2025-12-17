@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <style>
+        /* Simple, Clean Design */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 { text-align: center; color: #2c3e50; margin-bottom: 1.5rem; }
+        
+        .form-group { margin-bottom: 1.2rem; }
+        
+        label { display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;}
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box; /* Ensures padding doesn't break layout */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover { background-color: #219150; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Workshop Registration</h2>
+        
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="fullname" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@uni-wuerzburg.de" required>
+            </div>
+
+            <div class="form-group">
+                <label for="session">Academic degree</label>
+                <select id="session" name="session_choice">
+                    <option value="Morning">Bachelors</option>
+                    <option value="Afternoon">Masters</option>
+                    <option value="FullDay">PhD</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Special Comments</label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+
+</body>
+</html>
